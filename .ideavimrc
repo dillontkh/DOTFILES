@@ -29,11 +29,11 @@ set ideajoin
 Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdtree'
 set which-key
-set NERDTree
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-map <leader>r <Action>(ReformatCode)
+map <leader>cr <Action>(ReformatCode)
 
 " ------------- Plugin Settings ----------------
 " ---------- which-key ---------------
@@ -48,4 +48,6 @@ nnoremap L :action NextTab<CR>
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
-nmap <leader>e :NERDTree<CR>
+nmap <leader>e :NERDTreeToggle<CR>
+nmap <leader><leader> <Action>(GotoFile)
+nmap <leader>/ <Action>(FindInPath)
