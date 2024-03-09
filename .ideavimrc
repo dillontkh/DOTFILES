@@ -51,3 +51,6 @@ map Q gq
 nmap <leader>e :NERDTreeToggle<CR>
 nmap <leader><leader> <Action>(GotoFile)
 nmap <leader>/ <Action>(FindInPath)
+nmap <leader>bd <Action>(CloseContent)
+nmap <leader>bt <Action>(ActivateTerminalToolWindow)
+nmap <esc><esc> <Action>(HideAllWindows)
