@@ -8,9 +8,9 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move up and center cursor" })
 -- Harpoon
 local harpoon = require("harpoon")
 
-vim.keymap.set("n", "<leader>a", function()
-  harpoon:list():append()
-end, { desc = "Add buffer to harpoon" })
+-- vim.keymap.set("n", "<leader>a", function()
+--   harpoon:list():append()
+-- end, { desc = "Add buffer to harpoon" })
 
 vim.keymap.set("n", "<leader>h", function()
   harpoon.ui:toggle_quick_menu(harpoon:list())
