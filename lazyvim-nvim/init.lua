@@ -1,12 +1,11 @@
 if vim.g.vscode then
   -- VS Code extension
-  vim.g.mapleader = " "
-
-  vim.keymap.set("n", "H", "<Cmd>tabp<CR>")
+  vim.opt.ignorecase = true
+  vim.opt.smartcase = true
+  
 else
   -- Ordinary NeoVim
   -- bootstrap lazy.nvim, LazyVim and your plugins
   require("config.lazy")
   require("config.harpoon")
 end
-
